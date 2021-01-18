@@ -1,0 +1,19 @@
+﻿@using StudentAccounting.RazorClassLib.Views.Emails.ConfirmAccount
+@using StudentAccounting.RazorClassLib.Views.Shared
+
+@model ConfirmAccountViewModel
+
+@{
+    ViewData["EmailTitle"] = "Welcome!";
+}
+<p>
+    We're excited to have you get started.
+</p>
+<p>
+    First, you need to confirm your account. Just press the button below.
+</p>
+<br />
+
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Confirm Account", Model.ConfirmEmailUrl))
+
+<br />

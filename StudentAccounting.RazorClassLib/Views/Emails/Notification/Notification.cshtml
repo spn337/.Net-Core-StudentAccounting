@@ -1,0 +1,16 @@
+﻿@using StudentAccounting.RazorClassLib.Views.Emails.Notification
+
+@model NotificationViewModel
+
+@{
+    ViewData["EmailTitle"] = "Dear Student!";
+}
+<div>
+    Course <strong>"@Model.CourseName"</strong> will start after <strong style="color: #94002c; font-size:16px">@Model.DaysToStudyCount</strong> day(s).
+</div>
+
+<br />
+
+<p>
+    Have a nice day!
+</p>

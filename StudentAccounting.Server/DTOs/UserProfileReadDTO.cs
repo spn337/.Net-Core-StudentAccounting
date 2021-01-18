@@ -1,0 +1,10 @@
+﻿namespace StudentAccounting.Server.DTOs
+{
+    public class UserProfileReadDTO
+    {
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string UserName { get; set; }
+    }
+}
