@@ -45,7 +45,7 @@ packages/
 
 client-app/
 Migrations/
-appsettings.json
+
 
 StreetPizza/bin/
 StreetPizza/obj/
